@@ -4,4 +4,4 @@ Căpitanul de 37 de ani al Argentinei l-a numit pe Lautaro Martinez (27 de ani) 
 z = len(text)//2
 if len(text)%2 == 1:
     z +=1
-print(text[:z].upper().strip() + text[:z:-1].replace(".","").replace(",","").replace("?","").replace("!","").capitalize())
+print(text[:z].upper().strip() + text[z:].replace(".","").replace(",","").replace("?","").replace("!","").capitalize()[::-1])
